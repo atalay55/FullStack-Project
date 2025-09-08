@@ -1,0 +1,149 @@
+.userForm {
+  background-color: var(--container-bg-light);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  max-width: 1100px;
+  min-height: 500px;
+  margin: 2rem auto;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.userInputForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.formButton {
+  margin-top: 28px;
+}
+
+.userList {
+  list-style: none;
+  padding: 0;
+}
+
+.userList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  border-radius: 14px;
+  background-color: var(--card-bg-light);
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.userList li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+}
+
+.userInfo h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color-light);
+}
+
+.userInfo p {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  color: var(--text-color-light-1);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.mailIcon {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.buttonDiv {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1rem;
+}
+
+.userCountDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.userCount {
+  width: auto;
+  background: var(--secondary-color);
+  color: var(--text-color-dark);
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.userCount:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* === Dark mode === */
+.userForm.darkCard {
+  background-color: var(--container-bg-dark);
+}
+
+.darkCard .userList li {
+  background-color: var(--card-bg-dark);
+}
+
+.darkCard .userInfo p {
+  color: var(--text-color-dark-2);
+}
+
+.darkCard .userInfo h3 {
+  color: var(--text-color-dark);
+}
+
+.darkCard .userCount {
+  background: var(--bg-color-first);
+  color: var(--text-color-dark);
+}
+
+/* === Responsive === */
+@media (max-width: 700px) {
+  .userInputForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .userList li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .userList li .buttonDiv {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

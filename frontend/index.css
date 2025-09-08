@@ -1,0 +1,32 @@
+:root {
+  --bg-color-light: #f9fafc;
+  --bg-color-dark: #0f0f0f;
+  --container-bg-light: #e2e2e2;
+  --container-bg-dark: rgba(28, 28, 28, 0.9);
+  --text-color-light: #222;
+  --text-color-light-2: #484965;
+  --text-color-dark: #f1f1f1;
+  --text-color-dark-2: #f1f1f1;
+  --primary-color: #4cafef;
+  --secondary-color: #4caf50;
+  --danger-color: #f44336;
+  --badge-color: #ff9800;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --bg-body-color: #c7c5c3;
+  --card-bg-light: #d7d7d7;
+  --card-bg-dark: #474646;
+  --text-color-light-title: #4cafef;
+  --text-color-dark-title: #14212a;
+  --bg-color-first: #2196f3;
+  --bg-color-second:#f8f9fa;
+    --bg-color-third:#343a40;
+    --bg-color-4:#343a40;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-attachment: fixed;
+  background-size: 40px 40px;
+  background-color: var(--bg-body-color);
+}

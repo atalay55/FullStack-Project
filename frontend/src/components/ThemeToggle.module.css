@@ -1,0 +1,41 @@
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 9999px; 
+  border: none;
+  cursor: pointer;
+  background-color: var(--bg-color-second);
+  color:var(--text-color-light);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.themeToggle:hover {
+  background-color:var(--container-bg-light);
+}
+
+.darkMode {
+  background-color: var( --bg-color-third);
+  color:var(--bg-color-second);
+}
+
+.darkMode:hover {
+  background-color:var( --bg-color-4);
+}
+
+.themeToggle span {
+  font-weight: 500;
+}
+
+.themeToggle svg {
+  width: 1.2em;
+  height: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.themeToggle:hover svg {
+  transform: rotate(20deg);
+}

@@ -1,0 +1,72 @@
+
+.appContainer {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 16px;
+  background-color: var(--container-bg-light);
+  color: var(--text-color-light);
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px var(--shadow-color);
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+.appContainer.dark {
+  background-color: rgba(28, 28, 28, 0.9);
+  color: var(--text-color-dark);
+}
+
+.appContainer a{text-decoration: none;}
+
+.homeLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+
+
+.homeDescription {
+  max-width: 650px;
+  margin: 1.5rem auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .appContainer {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .homeButton {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .homeLinks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .homeDescription {
+    font-size: 1rem;
+  }
+
+  .themeToggleWrapper {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+

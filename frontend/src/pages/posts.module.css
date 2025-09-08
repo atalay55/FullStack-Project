@@ -1,0 +1,157 @@
+.postForm {
+  background-color: var(--container-bg-light);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  max-width: 1100px;
+  min-height: 500px;
+  margin: 2rem auto;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.userInputForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 250px;
+  position: relative;
+}
+
+.formGroup label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--text-color-light);
+  transition: all 0.2s ease;
+}
+
+.formButton {
+  margin-top: 28px;
+}
+
+.postList {
+  list-style: none;
+  padding: 0;
+}
+
+.postListDiv {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.postList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  border-radius: 14px;
+  background-color: var(--container-bg-light);
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.postList li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.postTitle {
+  font-weight: 500;
+}
+
+.postBadge {
+  text-align: center;
+  background-color: var(  --secondary-color);
+  color:var(--text-color-dark);
+  border-radius: 12px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  max-height: 45px;
+  min-height: 40px;
+  align-content: center;
+}
+
+.buttonDiv {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.postCountDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.postCount {
+  width: auto;
+  background: var(--secondary-color);
+  color: var(--text-color-dark);
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.postForm.darkCard .postCount {
+  background: var(--bg-color-first);
+  color: var(--text-color-dark);
+}
+
+.postCount:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* dark mode */
+.postForm.darkCard {
+  background-color: var(--container-bg-dark);
+}
+
+.darkCard .postList li {
+  background-color: var(--card-bg-dark);
+}
+
+.darkCard .postTitle {
+  color: var(--text-color-dark-2);
+}
+
+.darkCard .postBadge {
+  background: var(--bg-color-first);
+  color: var(--text-color-dark);
+}
+.darkCard .formGroup label {
+
+  color: var(--text-color-dark);
+
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .userInputForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .postList li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .postList li div {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

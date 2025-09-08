@@ -1,0 +1,19 @@
+.buttonStyle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--bg-color-light);
+}
+.buttonStyle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
