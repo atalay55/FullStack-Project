@@ -35,7 +35,7 @@ Proje iki fazdan oluşmaktadır:
 
 
 ### 3. Backend bağımlılıklarını yükleyin
-  cd ../backend
+  cd ../backend    
   npm install
 
 
