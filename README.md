@@ -45,10 +45,12 @@ Proje iki fazdan oluşmaktadır:
 
 ## Frontend (React + Vite)
   cd frontend
+  
   npm run dev
 
 ## Backend (NestJS + Express)
   cd backend
+  
   npm run start:dev
 
 
