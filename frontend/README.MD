@@ -1,13 +1,33 @@
 # FullStack-Project
 
-Bu proje, kullanıcıların ve postların yönetilebildiği Front-End  uygulamasıdır. uygluma 5173 portunda çalışır
+Bu proje, kullanıcıların ve postların yönetilebildiği Front-End  uygulamasıdır. uygluma 5173 portunda çalışır. 
 Proje iki fazdan oluşmaktadır:
 
-- **Phase 1:** JSONPlaceholder API kullanılarak kullanıcı ve post verileri çekilir ve bu veriler üzerinde CRUD işlemleri yapılabilir ve bu verileri sergileyebilir. Kullanıcı bu faza geçişi ve geri dönüşü uygulama içerisindeki butonlarla kontrol eder.
 
-- **Phase 2:** Node.js, Next.js ve Express kullanılarak oluşturulan backend üzerinde başlangıç verileri ile CRUD işlemleri yapılır. Kullanıcı bu faza geçişi ve geri dönüşü uygulama içerisindeki butonlarla kontrol eder.
+- **Phase 1:**
 
----
+*    JSONPlaceholder API kullanılarak kullanıcı ve post verileri çekilir.
+
+*    Bu veriler üzerinde CRUD işlemleri yapılabilir.
+
+*    CRUD işlemleri yapılırken basit kontroller ile kullanıcı yönlendirilir.
+
+*    Kullanıcı görsellik açısından tema renklerini değiştirebilir.
+
+*    Kullanıcı, uygulama içindeki butonlar ile bu faza geçiş yapabilir ve geri dönebilir.
+
+- **Phase 2:** 
+
+*    Node.js, Next.js ve Express kullanılarak oluşturulan backend üzerinde başlangıç verileri ile CRUD işlemleri yapılır.
+
+*    CRUD işlemleri yapılırken basit kontroller ile kullanıcı yönlendirilir.
+
+*    Kullanıcı görsellik açısından tema renklerini değiştirebilir.
+
+*    Kullanıcı, uygulama içindeki butonlar ile bu faza geçiş yapabilir ve geri dönebilir.
+
+
+
 
 ## Teknolojiler
 
