@@ -30,7 +30,7 @@ export default function TextInput({
       if (!val) {
         setError(`${label} boş olamaz`);
         onErrorChange && onErrorChange(true);
-      } else if (/^[a-zA-Z ]+$/.test(val)) {
+      } else if (/^[\p{L} ]+$/u.test(val)){
         setError("");
         onErrorChange && onErrorChange(false);
       } else {
