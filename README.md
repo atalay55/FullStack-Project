@@ -31,11 +31,13 @@ Proje iki fazdan oluşmaktadır:
 
 ### 2. Frontend bağımlılıklarını yükleyin
   cd FullStack-Project/frontend
+  
   npm install
 
 
 ### 3. Backend bağımlılıklarını yükleyin
-  cd ../backend    
+  cd ../backend 
+  
   npm install
 
 
